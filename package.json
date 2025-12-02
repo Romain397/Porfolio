@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Romain397/Porfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Romain397/Porfolio/issues"
+  },
+  "homepage": "https://github.com/Romain397/Porfolio#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
