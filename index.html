@@ -1,183 +1,315 @@
 <!doctype html>
-<html lang="fr-FR">
+<html lang="fr">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio Mazille Romain</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap 5 CSS (CDN) -->
+  <title>Portfolio</title>
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  <!-- Meta for accessibility / theme-color -->
-  <meta name="theme-color" content="#232022">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark text-light" style="font-family: 'Inter', sans-serif;">
+<body class="bg-dark text-light">
 
-  <!-- HEADER -->
-  <header class="py-3">
+  <!-- ================= HEADER ================= -->
+  <header class="py-4">
     <div class="container d-flex justify-content-between align-items-center">
-      <a class="navbar-brand text-light fw-bold" href="#">Emadalmagedy</a>
+
+      <span class="fw-bold">Emadalmagedy</span>
+
       <nav>
-        <ul class="nav">
-          <li class="nav-item"><a class="nav-link text-light" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#work">Work</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#contact">Contact</a></li>
+        <ul class="nav gap-4">
+          <li class="nav-item"><a href="#home" class="nav-link text-light p-0">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link text-light p-0">About</a></li>
+          <li class="nav-item"><a href="#work" class="nav-link text-light p-0">Work</a></li>
         </ul>
       </nav>
+
+      <a href="#" class="text-light fs-4"><i class="bi bi-github"></i></a>
+
     </div>
   </header>
 
-  <!-- HERO -->
-  <section id="hero" class="py-5">
-    <div class="container">
-      <div class="row align-items-center gy-4">
-        <div class="col-md-7">
-          <p class="mb-1 small text-muted">Hello, I'm Emad.</p>
-          <h1 class="display-4 fw-bold">Full stack<br>Developer</h1>
-          <a class="btn btn-outline-light mt-3" href="#contact">Contact Me</a>
-        </div>
-        <div class="col-md-5 text-center">
-          <div class="hero-portrait mx-auto"></div>
-        </div>
+  <!-- ================= HERO ================= -->
+  <section id="home" class="container py-5">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6">
+        <p class="text-secondary mb-1">Hello, I'm Emad.</p>
+        <h1 class="fw-bold display-4">Full Stack<br>Developer</h1>
+
+        <a href="#contact" class="btn btn-outline-light mt-3">
+          Contact Me
+        </a>
       </div>
+
+      <div class="col-lg-6 text-center mt-4 mt-lg-0">
+        <div class="bg-secondary rounded mx-auto" style="width:280px; height:340px;"></div>
+      </div>
+
     </div>
   </section>
 
-  <hr class="mx-5" style="border-color:#474445; opacity:0.6;">
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="container py-5">
 
-  <!-- ABOUT -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="mb-4 display-6">about</h2>
-      <div class="row">
-        <div class="col-lg-8">
-          <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique
-            quam felis...</p>
+    <h2 class="fw-bold text-capitalize">about</h2>
+    <hr class="border-secondary w-25">
+
+    <p class="text-secondary col-lg-7">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptates
+      laboriosam culpa id officiis obcaecati cumque consectetur nulla.
+    </p>
+
+    <div class="row mt-4 g-4">
+
+      <div class="col-lg-4">
+        <div class="p-4 border rounded h-100">
+          <h5>Front-End</h5>
+          <p class="text-secondary small mb-0">02+ Years Experience</p>
         </div>
       </div>
 
-      <div class="row mt-4 g-4">
-        <div class="col-md-4">
-          <div class="p-4 bg-secondary bg-opacity-10 rounded">
-            <h6 class="mb-1">Front-End</h6>
-            <small class="text-muted">80+ Hours Experience</small>
-          </div>
+      <div class="col-lg-4">
+        <div class="p-4 border rounded h-100">
+          <h5>Python</h5>
+          <p class="text-secondary small mb-0">3 Years Experience</p>
         </div>
-        <div class="col-md-4">
-          <div class="p-4 bg-secondary bg-opacity-10 rounded">
-            <h6 class="mb-1">Python</h6>
-            <small class="text-muted">4 Years Experience</small>
-          </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="p-4 border rounded h-100">
+          <h5>Machine Learning</h5>
+          <p class="text-secondary small mb-0">5+ Years Experience</p>
         </div>
-        <div class="col-md-4">
-          <div class="p-4 bg-secondary bg-opacity-10 rounded">
-            <h6 class="mb-1">Machine Learning</h6>
-            <small class="text-muted">120+ Hours Experience</small>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= WORK ================= -->
+  <section id="work" class="container py-5">
+
+    <h2 class="fw-bold text-capitalize">work</h2>
+    <hr class="border-secondary w-25">
+
+    <p class="text-secondary col-lg-7">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <div class="row mt-4 g-4">
+
+      <div class="col-lg-6">
+        <div class="card bg-dark text-light border-secondary">
+          <div class="bg-secondary rounded-top" style="height:200px;"></div>
+          <div class="card-body">
+            <h5 class="fw-semibold">DESIGN PORTFOLIO</h5>
+            <p class="small text-secondary">HTML — CSS — JAVASCRIPT</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <hr class="mx-5" style="border-color:#474445; opacity:0.6;">
-
-  <!-- WORK / PROJECTS -->
-  <section id="work" class="py-5">
-    <div class="container">
-      <h2 class="mb-4 display-6">work</h2>
-
-      <div class="row g-4">
-        <div class="col-md-6">
-          <article class="card bg-transparent border-0">
-            <img src="assets/img/project1.jpg" class="card-img-top rounded" alt="Projet 1">
-            <div class="card-body p-0 mt-2">
-              <h6 class="mb-0">DESIGN PORTFOLIO</h6>
-              <small class="text-muted">HTML · CSS · JAVASCRIPT</small>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-md-6">
-          <article class="card bg-transparent border-0">
-            <img src="assets/img/project2.jpg" class="card-img-top rounded" alt="Projet 2">
-            <div class="card-body p-0 mt-2">
-              <h6 class="mb-0">PORTFOLIO</h6>
-              <small class="text-muted">HTML · CSS · JAVASCRIPT</small>
-            </div>
-          </article>
+      <div class="col-lg-6">
+        <div class="card bg-dark text-light border-secondary">
+          <div class="bg-secondary rounded-top" style="height:200px;"></div>
+          <div class="card-body">
+            <h5 class="fw-semibold">DESIGN PORTFOLIO</h5>
+            <p class="small text-secondary">HTML — CSS — JAVASCRIPT</p>
+          </div>
         </div>
       </div>
+
     </div>
+
   </section>
 
-  <hr class="mx-5" style="border-color:#474445; opacity:0.6;">
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="container py-5">
 
-  <!-- CONTACT -->
-  <section id="contact" class="py-5">
-    <div class="container">
-      <h2 class="mb-4 display-6">Contact Me</h2>
+    <h2 class="fw-bold text-capitalize">Skills</h2>
+    <hr class="border-secondary w-25">
 
-      <form id="contactForm" novalidate>
-        <div class="row g-3">
-          <div class="col-md-6">
-            <label for="prenom" class="form-label">Prénom</label>
-            <input type="text" class="form-control" id="prenom" required>
-            <div class="invalid-feedback">Prénom requis.</div>
-          </div>
-          <div class="col-md-6">
-            <label for="nom" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="nom" required>
-            <div class="invalid-feedback">Nom requis.</div>
-          </div>
-          <div class="col-md-6">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" required>
-            <div class="invalid-feedback">E-mail valide requis.</div>
-          </div>
-          <div class="col-md-6">
-            <label for="objet" class="form-label">Objet</label>
-            <input type="text" class="form-control" id="objet" required>
-            <div class="invalid-feedback">Objet requis.</div>
-          </div>
-          <div class="col-12">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="6" required></textarea>
-            <div class="invalid-feedback">Message requis.</div>
-          </div>
+    <p class="text-secondary col-lg-7">
+      Here are the technologies I am currently using, learning, and other skills I have.
+    </p>
 
-          <div class="col-12">
-            <button class="btn btn-light" type="submit">Send message</button>
-          </div>
+    <!-- ------- USING NOW ------- -->
+    <h5 class="text-uppercase text-secondary mt-4">Using Now:</h5>
+    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-4 mt-1">
+
+      <div class="col">
+        <div class="p-3 border border-secondary rounded text-center h-100 bg-dark">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40">
+          <p class="mt-2 mb-0 small text-light">HTML5</p>
         </div>
-      </form>
+      </div>
+
+      <div class="col">
+        <div class="p-3 border border-secondary rounded text-center h-100 bg-dark">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40">
+          <p class="mt-2 mb-0 small text-light">CSS3</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-3 border border-secondary rounded text-center h-100 bg-dark">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40">
+          <p class="mt-2 mb-0 small text-light">JavaScript</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-3 border border-secondary rounded text-center h-100 bg-dark">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="40">
+          <p class="mt-2 mb-0 small text-light">Bootstrap</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-3 border border-secondary rounded text-center h-100 bg-dark">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40">
+          <p class="mt-2 mb-0 small text-light">Git</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-3 border border-secondary rounded text-center h-100 bg-dark">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40">
+          <p class="mt-2 mb-0 small text-light">React</p>
+        </div>
+      </div>
+
     </div>
+
+    <!-- ------- LEARNING ------- -->
+    <h5 class="text-uppercase text-secondary mt-5">Learning:</h5>
+    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-4 mt-1">
+
+      <div class="col">
+        <div class="p-3 border border-secondary rounded text-center h-100 bg-dark">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40">
+          <p class="mt-2 mb-0 small text-light">Node.js</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-3 border border-secondary rounded text-center h-100 bg-dark">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40">
+          <p class="mt-2 mb-0 small text-light">MySQL</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-3 border border-secondary rounded text-center h-100 bg-dark">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="40">
+          <p class="mt-2 mb-0 small text-light">MongoDB</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-3 border border-secondary rounded text-center h-100 bg-dark">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40">
+          <p class="mt-2 mb-0 small text-light">TypeScript</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ------- OTHER SKILLS ------- -->
+    <h5 class="text-uppercase text-secondary mt-5">Other Skills:</h5>
+    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-4 mt-1">
+
+      <div class="col">
+        <div class="p-3 border border-secondary rounded text-center h-100 bg-dark">
+          <span class="fs-1">🇬🇧</span>
+          <p class="mt-2 mb-0 small text-light">English C1/C2</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-3 border border-secondary rounded text-center h-100 bg-dark">
+          <span class="fs-1">🇪🇸</span>
+          <p class="mt-2 mb-0 small text-light">Spanish B1/B2</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-3 border border-secondary rounded text-center h-100 bg-dark">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="40">
+          <p class="mt-2 mb-0 small text-light">C++</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-3 border border-secondary rounded text-center h-100 bg-dark">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="40">
+          <p class="mt-2 mb-0 small text-light">C</p>
+        </div>
+      </div>
+
+    </div>
+
   </section>
 
-  <!-- FOOTER -->
-  <footer class="py-4">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div>Emadalmagedy</div>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="container py-5">
+
+    <h2 class="fw-bold text-capitalize">Contact Me</h2>
+    <hr class="border-secondary w-25">
+
+    <p class="text-secondary col-lg-7">
+      I would love to hear about your project and how I can help.
+    </p>
+
+    <form class="row g-3">
+
+      <div class="col-md-6">
+        <input type="text" class="form-control bg-dark text-light border-secondary" placeholder="First Name">
+      </div>
+
+      <div class="col-md-6">
+        <input type="text" class="form-control bg-dark text-light border-secondary" placeholder="Last Name">
+      </div>
+
+      <div class="col-md-6">
+        <input type="email" class="form-control bg-dark text-light border-secondary" placeholder="Email">
+      </div>
+
+      <div class="col-md-6">
+        <input type="text" class="form-control bg-dark text-light border-secondary" placeholder="Subject">
+      </div>
+
+      <div class="col-12">
+        <textarea class="form-control bg-dark text-light border-secondary" rows="5" placeholder="Message"></textarea>
+      </div>
+
+      <div class="col-12">
+        <button class="btn btn-light px-4">Send Message</button>
+      </div>
+
+    </form>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="container py-4 border-top border-secondary mt-5">
+    <div class="d-flex justify-content-between align-items-center">
+
+      <span>Emadalmagedy</span>
+
       <div class="d-flex gap-3">
-        <a class="text-light" href="#" aria-label="Facebook">fb</a>
-        <a class="text-light" href="#" aria-label="Instagram">ig</a>
-        <a class="text-light" href="#" aria-label="GitHub">gh</a>
+        <i class="bi bi-instagram fs-4"></i>
+        <i class="bi bi-facebook fs-4"></i>
+        <i class="bi bi-github fs-4"></i>
       </div>
+
     </div>
   </footer>
 
-  <!-- Bootstrap JS + Popper (CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Custom JS -->
-  <script src="script.js"></script>
 </body>
 
 </html>
