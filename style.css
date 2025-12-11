@@ -1,4 +1,20 @@
 body {
-  background: #3a3333 !important;
+  background: #262626 !important;
   color: #eee;
+}
+
+.contact-link {
+  position: relative;
+  text-decoration: none; /* On enlève le vrai soulignement */
+  padding-bottom: 4px; /* Espace entre texte et trait */
+}
+
+.contact-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* Épaisseur du trait */
+  background: #c8d2da; /* Couleur du trait */
 }
