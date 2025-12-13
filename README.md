@@ -18,5 +18,5 @@ Lien : https://www.figma.com/design/J0ryeNofU0AyvMltr5ulzn/Portfolio-Design-Temp
 
 ## Coordonnées
 
-mazilleromain5@gmail.com
-https://www.linkedin.com/in/romain-mazille-b42386382/
+- mazilleromain5@gmail.com
+- https://www.linkedin.com/in/romain-mazille-b42386382/
